@@ -16,7 +16,7 @@ const Hero = () => {
           <HeroBadges />
           <HeroContent />
           <Button asChild className="mt-6 rounded-full font-bold" size="lg">
-            <Link href="/contact">
+            <Link href="#contact">
               Skontaktuj się
             </Link>
           </Button>

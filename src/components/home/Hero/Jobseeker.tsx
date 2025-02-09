@@ -14,7 +14,7 @@ const Jobseeker = () => {
                 </CardDescription>
             </CardHeader>
             <CardContent className="p-4 md:p-6 md:pt-2">
-                <Button className="bg-white text-black font-bold hover:bg-gray-200">
+                <Button asChild className="bg-white text-black font-bold hover:bg-gray-200">
                     <Link href="https://jobseeker.vercel.app/">
                         Sprawdź
                     </Link>

@@ -43,7 +43,7 @@ const Services = () => {
                     <div className="flex flex-col justify-end h-full gap-2">
                         <h3 className="text-white text-2xl font-bold">{service.title}</h3>
                         <p className="text-gray-100 text-sm leading-tight mb-2 max-w-md">{service.description}</p>
-                        <Button variant="blur" className="w-fit border-white/50 border">
+                        <Button asChild variant="blur" className="w-fit border-white/50 border">
                             <Link href={'mailto:karol.jj@icloud.com'} className="flex items-center gap-2">
                                 <ExternalLink className="w-4 h-4" />
                                 Skontaktuj się

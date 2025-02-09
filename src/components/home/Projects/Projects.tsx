@@ -31,14 +31,14 @@ const Projects = ({ className }: ProjectsProps) => {
                                     Dowiedz się więcej
                                 </Link>
                             </Button> */}
-                            <Button variant="blur" className="w-fit border-white/50 border">
+                            <Button asChild variant="blur" className="w-fit border-white/50 border">
                                 <Link href={project.live} className="flex items-center gap-2">
                                     <Globe className="w-4 h-4" />
                                     Odwiedź stronę
                                 </Link>
                             </Button>
                             {project.github && (
-                                <Button variant="blur" className="w-fit border-white/50 border">
+                                <Button asChild variant="blur" className="w-fit border-white/50 border">
                                     <Link href={project.github} className="flex items-center gap-2">
                                         <Github className="w-4 h-4" />
                                         Kod źródłowy
