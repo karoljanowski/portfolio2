@@ -20,11 +20,11 @@ const Projects = ({ className }: ProjectsProps) => {
                 className="w-full min-h-96 h-full grid grid-rows-1 grid-cols-1 relative" 
             >
                 <Image src={project.image} alt={project.title} width={1500} height={450} 
-                className="object-cover max-h-[450px] row-span-full col-span-full" />
-                <div className="w-full h-full bg-gradient-to-t from-black/90 via-black/60 to-transparent row-span-full col-span-full p-6 relative z-20">
+                className="object-cover max-h-[450px] h-full row-span-full col-span-full" />
+                <div className="w-full h-full bg-gradient-to-t from-black/90 via-black/60 to-transparent row-span-full col-span-full p-6">
                     <div className="flex flex-col justify-end h-full gap-2">
                         <h3 className="text-white text-2xl font-bold">{project.title}</h3>
-                        <p className="text-gray-100 mb-2 text-sm leading-tight">{project.description}</p>
+                        <p className="text-gray-100 mb-2 text-sm leading-tight max-w-lg">{project.description}</p>
                         <div className="flex gap-2">
                             {/* <Button variant="blur" className="w-fit">
                                 <Link href={project.path} className="flex items-center gap-2">
@@ -38,12 +38,14 @@ const Projects = ({ className }: ProjectsProps) => {
                                     Odwiedź stronę
                                 </Link>
                             </Button>
-                            <Button variant="blur" className="w-fit border-white/50 border">
-                                <Link href={project.github} className="flex items-center gap-2">
-                                    <Github className="w-4 h-4" />
-                                    Kod źródłowy
-                                </Link>
-                            </Button>
+                            {project.github && (
+                                <Button variant="blur" className="w-fit border-white/50 border">
+                                    <Link href={project.github} className="flex items-center gap-2">
+                                        <Github className="w-4 h-4" />
+                                        Kod źródłowy
+                                    </Link>
+                                </Button>
+                            )}
                         </div>
                     </div>
                 </div>

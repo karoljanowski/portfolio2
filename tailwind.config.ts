@@ -9,9 +9,6 @@ export default {
   ],
   theme: {
   	extend: {
-		animation: {
-			'spin-slow': 'spin 10s linear infinite',
-		},
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'

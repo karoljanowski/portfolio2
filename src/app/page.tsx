@@ -4,6 +4,7 @@ import Projects from "@/components/home/Projects/Projects";
 import Social from "@/components/home/Social/Social";
 import Services from "@/components/home/Services/Services";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Collaborate from "@/components/home/Collaborate/Collaborate";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
       <div className="container mx-auto px-6 md:px-12 my-6">
         <Services />
       </div>
-
+      <div className="container mx-auto px-6 md:px-12 my-6">
+        <Collaborate />
+      </div>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 'use client'
 import { Card } from "@/components/ui/card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {ArrowUpRight} from "lucide-react";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
@@ -21,18 +21,27 @@ const Projects = () => {
 const TextCircle = ({ isHovered }: { isHovered: boolean }) => {
     const text = "PROJECTS•PROJECTS•PROJECTS•";
     const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+    const [translateValue, setTranslateValue] = useState('-75px');
 
     const getCharacterStyle = (index: number, totalChars: number) => ({
         transform: `
             translate(-50%, -50%)
             rotate(${index * (360 / totalChars)}deg)
-            ${isDesktop ? isHovered ? 'translateY(-85px)' : 'translateY(-75px)' : isHovered ? 'translateY(-60px)' : 'translateY(-55px)'}
+            translateY(${translateValue})
         `
     });
 
+    useEffect(() => {
+        if (isDesktop) {
+            setTranslateValue(isHovered ? '-85px' : '-75px');
+        } else {
+            setTranslateValue(isHovered ? '-60px' : '-55px');
+        }
+    }, [isHovered, isDesktop]);
+
     return (
         <div className="flex items-center justify-center h-full relative row-span-full col-span-full">
-            <div className="animate-spin-slow">
+            <div>
                 {text.split('').map((char, index) => (
                     <span
                     key={index}
