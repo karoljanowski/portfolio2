@@ -10,7 +10,7 @@ const Projects = () => {
 
     return (
         <Card onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="flex items-center justify-center bg-cyan-500 p-0">
-            <Link href="/projects" className="w-full h-full grid grid-cols-1 items-center justify-items-center">
+            <Link href="#projects" className="w-full h-full grid grid-cols-1 items-center justify-items-center">
                 <TextCircle isHovered={isHovered} />
                 <ArrowUpRight className="w-14 h-14 row-span-full col-span-full text-white" />
             </Link>

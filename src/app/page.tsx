@@ -17,10 +17,10 @@ export default function Home() {
         <Social color="bg-red-500" media="Email" name="karol.jj@icloud.com" icon={<Mail />} link="mailto:karol.jj@icloud.com" />
         <Projects className="sm:col-span-3 lg:col-start-2 row-start-1 lg:row-span-full" />
       </div>
-      <div className="container mx-auto px-6 md:px-12 my-6">
+      <div id="services" className="container mx-auto px-6 md:px-12 my-6">
         <Services />
       </div>
-      <div className="container mx-auto px-6 md:px-12 my-6">
+      <div id="contact" className="container mx-auto px-6 md:px-12 my-6">
         <Collaborate />
       </div>
     </main>

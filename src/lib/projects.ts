@@ -30,7 +30,7 @@ export const Projects: Project[] = [
         live: 'https://pasta-olive.vercel.app/',
         dashboard: 'https://pasta-olive.vercel.app/login',
         github: 'https://github.com/karoljanowski/pasta',
-        description: 'Projekt osobisty stworzony w celu nauki podstaw Next.js. Aplikacja umożliwia użytkownikom zamawianie jedzenia z restauracji, zarządzanie zamówieniami oraz pozwala właścicielom restauracji na aktualizację menu. Oferuje kompleksowe rozwiązanie do zamawiania i zarządzania żywnością.'
+        description: 'Aplikacja umożliwia użytkownikom zamawianie jedzenia z restauracji, zarządzanie zamówieniami oraz pozwala właścicielom restauracji na aktualizację menu. Oferuje kompleksowe rozwiązanie do zamawiania i zarządzania żywnością.'
     },
     {
         path: 'apartments',

@@ -13,9 +13,9 @@ import { Card } from "./ui/card";
 
 const Header = () => {
   const navItems = [
-    { label: "O mnie", href: "/about" },
-    { label: "Projekty", href: "/projects" },
-    { label: "Kontakt", href: "/contact" },
+    { label: "Projekty", href: "#projects" },
+    { label: "Usługi", href: "#services" },
+    { label: "Kontakt", href: "#contact" },
   ];
 
   return (

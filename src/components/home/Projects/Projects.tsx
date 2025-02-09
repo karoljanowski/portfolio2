@@ -53,7 +53,7 @@ const Projects = ({ className }: ProjectsProps) => {
     }));
 
     return (
-        <Motion className={className}>
+        <Motion id="projects" className={className}>
             <CarouselSection
                 title="Projekty"
                 description="Sprawdź moje najnowsze projekty"

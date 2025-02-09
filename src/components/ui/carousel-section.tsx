@@ -49,7 +49,7 @@ const CarouselSection = ({
                     }}
                     className="w-full h-full"
                 >
-                    <CarouselContent className="h-full">
+                    <CarouselContent className="h-full ml-0">
                         {items.map((item) => (
                             <CarouselItem 
                                 key={item.id} 
