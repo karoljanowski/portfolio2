@@ -1,6 +1,6 @@
 import Hero from "./Hero";
 import Projects from "./Projects";
-import Sth from "./Sth";
+import Jobseeker from "./Jobseeker";
 import Motion from "@/components/ui/motion";
 
 const HeroContainer = () => {
@@ -15,7 +15,7 @@ const HeroContainer = () => {
             <Projects />
         </Motion>
         <Motion>
-            <Sth />
+            <Jobseeker />
         </Motion>
     </div>
   );
