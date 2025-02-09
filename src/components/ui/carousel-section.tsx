@@ -22,7 +22,6 @@ interface CarouselSectionProps {
 const CarouselSection = ({
     title,
     description,
-    className,
     items,
     itemClassName,
     cardClassName,

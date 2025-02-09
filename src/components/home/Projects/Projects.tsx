@@ -1,9 +1,8 @@
 'use client'
 
 import { Projects as ProjectsData } from "@/lib/projects";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ExternalLink, Globe, Github } from "lucide-react";
+import { Globe, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CarouselSection from "@/components/ui/carousel-section";
 import Motion from "@/components/ui/motion";

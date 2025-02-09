@@ -8,7 +8,7 @@ import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader.js'
 const SVGShape = ({url, rotation, position}: {url: string, rotation: [number, number, number], position: [number, number, number]}) => {
     const svgData = useLoader(SVGLoader, url);
     const shapes = useMemo(() => {
-      return svgData.paths.map((p: any) => p.toShapes(true));
+      return svgData.paths.map((p) => p.toShapes(true));
     }, [svgData]);
   
     return (
