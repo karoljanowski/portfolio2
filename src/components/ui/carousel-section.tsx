@@ -54,7 +54,7 @@ const CarouselSection = ({
                             <CarouselItem 
                                 key={item.id} 
                                 className={cn(
-                                    "pl-2 md:pl-4", 
+                                    "pl-2", 
                                     basisMap[itemsPerView],
                                     itemClassName
                                 )}
