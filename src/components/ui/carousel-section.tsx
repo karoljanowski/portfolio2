@@ -49,12 +49,12 @@ const CarouselSection = ({
                     }}
                     className="w-full h-full"
                 >
-                    <CarouselContent className="h-full ml-0">
+                    <CarouselContent className={`h-full ${itemsPerView === "1" ? "ml-0" : "-ml-4"}`}>
                         {items.map((item) => (
                             <CarouselItem 
                                 key={item.id} 
                                 className={cn(
-                                    "pl-2", 
+                                    `${itemsPerView === "1" ? "ml-0" : "ml-2"}`,
                                     basisMap[itemsPerView],
                                     itemClassName
                                 )}
